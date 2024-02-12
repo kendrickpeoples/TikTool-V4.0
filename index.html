@@ -9,5 +9,32 @@
 
 		<title>TikTool V4.0</title>
 	</head>
-	<body></body>
+	<body>
+		<section class="tabbed-form">
+			<div class="form-titles">
+				<h2 id="form-1-title" class="active-tab">Account Information</h2>
+
+				<h2 id="form-2-title">Router Setup</h2>
+			</div>
+
+			<form id="form-1">
+				<input type="text" name="account_id" id="accountId" value="account id" placeholder="Account ID" />
+				<br />
+				<input type="text" name="account_name" id="accountName" value="account name" placeholder="Account Name" />
+				<br />
+				<select name="package_selection" id="packageSelection">
+					<option value="" disabled selected>Please Select a Package</option>
+					<option value="res25">RES25</option>
+					<option value="res100">RES100</option>
+					<option value="bus25">BUS25</option>
+					<option value="bus100">BUS100</option>
+					<option value="towerhost">TOWERHOST</option>
+					<option value="employee">EMPLOYEE</option>
+					<option value="free">FREE</option>
+				</select>
+			</form>
+
+			<form id="form-2"></form>
+		</section>
+	</body>
 </html>
