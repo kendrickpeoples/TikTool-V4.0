@@ -6,6 +6,8 @@
 	--neutral-4: hsl(236, 100%, 87%);
 
 	--main: #00b1e9;
+
+	--secondary: #1651a1;
 }
 
 * {
@@ -32,11 +34,27 @@ body {
 .form-titles {
 	display: flex;
 	justify-content: space-around;
+	gap: 20px;
 	background: #fff;
 	font-size: 14px;
 	text-transform: uppercase;
 }
 
 .form-titles h2 {
-	background: var(--main);
+	background: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	cursor: pointer;
+}
+
+.active-tab {
+	background: var(--main) !important;
+	background: linear-gradient(90deg, var(--main) 0%, var(--secondary) 100%) !important;
+}
+
+form {
+	width: 85%;
+	margin: 0 auto;
+	padding: 30px 10px;
 }
