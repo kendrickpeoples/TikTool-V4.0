@@ -5,9 +5,9 @@
 	--neutral-3: hsl(235, 45%, 61%);
 	--neutral-4: hsl(236, 100%, 87%);
 
-	--main: #00b1e9;
+	--main: #1651a1;
 
-	--secondary: #1651a1;
+	--secondary: #00b1e9;
 }
 
 * {
@@ -50,11 +50,55 @@ body {
 
 .active-tab {
 	background: var(--main) !important;
-	background: linear-gradient(90deg, var(--main) 0%, var(--secondary) 100%) !important;
 }
 
 form {
 	width: 85%;
 	margin: 0 auto;
 	padding: 30px 10px;
+}
+
+form input,
+form select {
+	display: block;
+	width: 100%;
+	margin: 4px 0;
+	padding: 8px 15px;
+	font-size: 15px;
+	border: 1px solid #dadada;
+	outline: none;
+}
+
+select {
+	color: #757575;
+}
+
+form input:focus,
+form select:focus {
+	border-color: var(--main);
+	box-shadow: ;
+}
+
+.submit-section {
+	padding: 20px;
+}
+
+.submit-section button {
+	box-shadow: 0 0 1px #000;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 10px 40px;
+	display: block;
+	margin: 0 auto;
+}
+
+.submit-section button:hover {
+	background: var(--main);
+	cursor: pointer;
+}
+
+#form-2 {
+	display: none;
 }
